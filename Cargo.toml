@@ -1,0 +1,18 @@
+[package]
+name = "chip-8"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+
+[lints.rust]
+unsafe_code = "warn"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
+
+[dependencies]
+minifb = "0.29.0"
+rand = "0.10.3"
+# 只需要播放能力（自定义方波音源），不需要 mp3/flac 等解码器
+rodio = { version = "0.23.0", default-features = false, features = ["playback"] }
