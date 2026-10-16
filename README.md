@@ -111,7 +111,7 @@ CHIP-8 从来没有官方规范，少数指令在不同机器上行为不同。�
 - [MIT](LICENSE-MIT)
 - [Apache-2.0](LICENSE-APACHE)
 
-你可以任选其一使用。版权 Copyright (c) 2026 zhb。
+你可以任选其一使用。版权 Copyright (c) 2026 zredb。
 
 ## 参考资料
 
