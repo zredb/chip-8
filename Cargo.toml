@@ -1,8 +1,14 @@
 [package]
-name = "chip-8"
+name = "chip8rs"
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.85"
+description = "完整的 CHIP-8 模拟器：35 条指令、64x32 显示、60Hz 定时器、蜂鸣与内置演示 ROM"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/zredb/chip-8"
+readme = "README.md"
+keywords = ["chip-8", "chip8", "emulator", "retro", "games"]
+categories = ["emulators", "games"]
 
 [lints.rust]
 unsafe_code = "warn"

@@ -271,13 +271,13 @@ fn print_usage() {
 CHIP-8 模拟器
 
 用法:
-  chip-8 <ROM 路径> [每秒指令数] [放大倍数]
-  chip-8 --demo [每秒指令数] [放大倍数]
+  chip8rs <ROM 路径> [每秒指令数] [放大倍数]
+  chip8rs --demo [每秒指令数] [放大倍数]
 
 示例:
-  chip-8 roms/TETRIS            # 默认 600 条/秒、放大 10 倍
-  chip-8 roms/TETRIS 900 8      # 调速 + 更小的窗口
-  chip-8 --demo                 # 无需 ROM 文件，运行内置演示（显示 CAFE）
+  chip8rs roms/TETRIS            # 默认 600 条/秒、放大 10 倍
+  chip8rs roms/TETRIS 900 8      # 调速 + 更小的窗口
+  chip8rs --demo                 # 无需 ROM 文件，运行内置演示（显示 CAFE）
 
 选项:
   --trace    在标准错误流打印每条执行的指令（调试用）

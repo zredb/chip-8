@@ -2,7 +2,21 @@
 
 用 Rust 实现的完整 CHIP-8 模拟器，带图形窗口（minifb）、音频蜂鸣（rodio）和 27 个单元测试。
 
-![CHIP-8 64x32 screen](https://img.shields.io/badge/screen-64%C3%9732-green) ![Rust 2024](https://img.shields.io/badge/edition-2024-blue)
+![CHIP-8 64x32 screen](https://img.shields.io/badge/screen-64%C3%9732-green) ![Rust 2024](https://img.shields.io/badge/edition-2024-blue) [![crates.io](https://img.shields.io/crates/v/chip8rs.svg)](https://crates.io/crates/chip8rs) [![license](https://img.shields.io/crates/l/chip8rs.svg)](LICENSE-MIT)
+
+## 安装
+
+```bash
+cargo install chip8rs
+```
+
+或从源码运行：
+
+```bash
+git clone https://github.com/zredb/chip-8.git
+cd chip-8
+cargo run --release -- --demo
+```
 
 ## 特性
 
@@ -43,8 +57,8 @@ ROM 可以在 GitHub 上搜索 "chip8 roms" 找到大量公开的游戏与测试
 ## 用法
 
 ```
-chip-8 <ROM 路径> [每秒指令数] [放大倍数]
-chip-8 --demo [每秒指令数] [放大倍数]
+chip8rs <ROM 路径> [每秒指令数] [放大倍数]
+chip8rs --demo [每秒指令数] [放大倍数]
 
 选项:
   --trace    在标准错误流打印每条执行的指令（调试用）
@@ -89,6 +103,15 @@ CHIP-8 从来没有官方规范，少数指令在不同机器上行为不同。�
 | `sprite_wraps` | `true` | `DXYN`：默认精灵越界环绕到对侧（原版）；`false` 为裁剪 |
 
 个别 ROM 若显示异常，通常是需要调整 quirk。
+
+## 许可证
+
+本项目采用双许可发布：
+
+- [MIT](LICENSE-MIT)
+- [Apache-2.0](LICENSE-APACHE)
+
+你可以任选其一使用。版权 Copyright (c) 2026 zhb。
 
 ## 参考资料
 
