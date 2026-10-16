@@ -1,6 +1,6 @@
 [package]
 name = "chip8rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.85"
 description = "完整的 CHIP-8 模拟器：35 条指令、64x32 显示、60Hz 定时器、蜂鸣与内置演示 ROM"
